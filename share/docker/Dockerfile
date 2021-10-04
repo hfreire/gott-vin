@@ -1,11 +1,12 @@
-FROM ghost:3.21.1-alpine AS ghost
+FROM ghost:3.42.6-alpine AS ghost
 
 # Install utils
 RUN set -x \
   && apk --no-cache add \
     su-exec \
     curl \
-    netcat-openbsd
+    netcat-openbsd \
+    patch
 
 # Patch ghost code
 COPY --chown=node:node share/ghost/ghost.patch $GHOST_INSTALL/ghost.patch

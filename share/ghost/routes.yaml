@@ -8,7 +8,7 @@ collections:
     permalink: /blog/{slug}/
     template: custom-blog
     data: page.blog
-    filter: 'tags:blog'
+    filter: 'primary_tag:blog'
   /nya-releaser/:
     permalink: /nya-releaser/{slug}/
     template: custom-new-releases

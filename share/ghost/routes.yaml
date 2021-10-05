@@ -8,12 +8,17 @@ collections:
     permalink: /blog/{slug}/
     template: custom-blog
     data: page.blog
-    filter: 'tags:-what-should-i-drink'
+    filter: 'tags:blog'
   /nya-releaser/:
     permalink: /nya-releaser/{slug}/
     template: custom-new-releases
     data: 'page.nya releaser'
     filter: 'primary_tag:what-should-i-drink'
+  /produkter/:
+    permalink: /produkter/{slug}/
+    template: custom-products
+    data: 'page.produkter'
+    filter: 'primary_tag:product'
 
 taxonomies:
   tag: /tag/{slug}/

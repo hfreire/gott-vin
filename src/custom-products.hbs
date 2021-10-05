@@ -1,6 +1,6 @@
 {{!< default}}
 
-{{#page}}
+{{#post}}
 
   {{> post-hero }}
 
@@ -20,12 +20,12 @@
 
   </div>
 
-{{/page}}
+{{/post}}
 
 <div class='o-wrapper'>
 
   <div class='o-grid js-grid'>
-    {{#get 'posts' limit='all' filter='tags:blog'}}
+    {{#get 'posts' limit='all' filter='primary_tag:product' }}
       {{#foreach posts}}
         {{> post-card }}
       {{/foreach}}

@@ -3,5 +3,10 @@
     "from": "^/$",
     "to": "/blog/",
     "permanent": true
+  },
+  {
+    "from": "^/produkt/(.*)",
+    "to": "/produkter/$1/",
+    "permanent": true
   }
 ]
